@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Epilogue:wght@400;600;700&family=Heebo&family=Inter&family=Josefin+Sans:wght@300&family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title></title>
+  </head>
+  <body>
+    <div class="over-lay">
+      <div class="checkout-form">
+        <h4>Check Out Receipt</h4>
+        <p class="checkout-title">
+          ITEM NAME <span>No</span><span>Amount</span>
+        </p>
+
+        <span
+          >Total Amount Payable: <span class="amount-payable">0000</span></span
+        >
+
+        <div class="pay-buttons">
+          <button class="pay">Pay</button>
+          <button class="receipt">Print Receipt</button>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar">
+      <div class="logo-box">
+        <!-- <img src="images/logo.svg" alt="" class="logo-image" /> -->
+        <span>Kay-Dad Wears</span>
+      </div>
+      <ul class="nav-items">
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <ul>
+        <li class="submenu">
+          <img src="images/icon-cart.svg" alt="" class="cart-image" />
+          <img src="images/lowest.png" alt="" class="person-image" />
+          <div class="shopping-cart">
+            <h4>Cart</h4>
+            <hr />
+            <p>Your cart is empty.</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <hr class="navbar-border" />
+
+    <main class="showcase" id="home">
+      <div class="container">
+        <div class="product-1">
+          <img src="images/image-product-1.jpg" alt="" class="showcase-image" />
+
+          <div class="product-images">
+            <img
+              src="images/image-product-1-thumbnail.jpg"
+              alt=""
+              class="product-photo"
+            />
+            <img
+              src="images/image-product-3-thumbnail.jpg"
+              alt=""
+              class="product-photo"
+            />
+            <img
+              src="images/image-product-4-thumbnail.jpg"
+              alt=""
+              class="product-photo"
+            />
+            <img
+              src="images/image-product-2-thumbnail.jpg"
+              alt=""
+              class="product-photo"
+            />
+          </div>
+        </div>
+        <div class="showcase-content">
+          <span>sneaker company</span>
+
+          <h2 class="showcase-heading">Fall Limited Edition Sneakers</h2>
+          <p class="showcase-text">
+            These low-profile sneakers are your perfect casual wear <br />
+            companion. Featuring a durable rubber outer sole, they'll <br />
+            withstand everything the weather can offer.
+          </p>
+          <p class="price">
+            <strong>$125.00</strong> &nbsp; &nbsp;
+            <button class="discount">50%</button>
+          </p>
+          <p class="old-price"><s>$250. 00</s></p>
+
+          <button class="minus-btn">
+            <img src="images/icon-minus.svg" alt="" />
+          </button>
+          <button class="zero-btn"><strong>0</strong></button>
+          <button class="plus-btn">
+            <img src="images/icon-plus.svg" alt="" />
+          </button>
+          <button class="add-to-cart">
+            <img src="images/icon-cart.svg" alt="" /> &nbsp; &nbsp;Add to cart
+          </button>
+        </div>
+      </div>
+      <div id="collections">
+        <h2>Our Collections</h2>
+        <div class="collection-items">
+          <!-- <span> <i class="fas fa-left-angle"> </i></span> -->
+          <div class="item-no" data-link="home">
+            <img src="images/mk20watch1.jpg" alt="Smartwatch" />
+            <h6>MK20 Smartwatch</h6>
+          </div>
+          <div class="item-no" data-link="home">
+            <img src="images/maison.jpg" alt="Maison" />
+            <h6>Maison Margiela Trainers</h6>
+          </div>
+          <div class="item-no" data-link="home">
+            <img src="images/salomon.jpg" alt="Salomon Trainers" />
+            <h6>Salomon Trainers</h6>
+          </div>
+          <div class="item-no" data-link="home">
+            <img src="images/tom-ford4.jpg" alt="Tom Ford Wallet" />
+            <h6>Tom Ford Wallet</h6>
+          </div>
+          <!-- <span> <i class="fas fa-right-angle"> </i></span> -->
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9a999b05e4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
