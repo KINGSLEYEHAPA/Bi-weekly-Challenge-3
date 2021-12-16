@@ -237,7 +237,7 @@ addProduct.addEventListener("click", () => {
 
       payable = payable + amountNumber;
       console.log(payable);
-      AmountPayable.textContent = "$" + payable;
+      AmountPayable.textContent = "$" + payable.toFixed(2);
     }
 
     console.log(payOutItemArray);
@@ -246,6 +246,13 @@ addProduct.addEventListener("click", () => {
 
     const payBtn = document.querySelector(".pay");
     payBtn.addEventListener("click", function () {
+      checkOutTitle.removeChild(checkOutContainer);
+      const clearItemsOnCart = document.querySelectorAll("#my-product div");
+      clearItemsOnCart.forEach(function (item) {
+        item.remove();
+      });
+      checkPayOut.remove();
+
       overlay.style.display = "none";
     });
   });

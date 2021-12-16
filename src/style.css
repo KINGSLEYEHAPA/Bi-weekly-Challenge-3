@@ -45,6 +45,9 @@ ul li {
 .person-image {
   width: 3rem;
 }
+.toggle-bar {
+  display: none;
+}
 
 .cart-image {
   width: 1rem;
@@ -396,8 +399,145 @@ span {
   color: var(--secondary-color);
   font-size: 1rem;
   border-radius: 0.2rem;
+  border: none;
 }
 .amount-payable {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: black;
+  margin-left: 0.5rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1186px) {
+  .nabar {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .nav-items {
+    position: absolute;
+    flex-direction: column;
+    top: 5rem;
+    left: 0;
+    width: 100vw;
+    background-color: var(--primary-color);
+    height: 20rem;
+    text-align: center;
+    display: none;
+  }
+  .nav-items li a {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--color-white);
+  }
+  .nav-items li {
+    margin: 0.5rem 0;
+  }
+  .nav-items li:first-child {
+    margin-top: 2rem;
+  }
+
+  .logo-box {
+    position: relative;
+    right: 7rem;
+  }
+
+  .cart-section {
+    position: relative;
+    left: 24rem;
+  }
+  .toggle-bar {
+    display: block;
+    float: right;
+    margin-right: 2rem;
+    position: relative;
+    left: 15rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1011px) {
+  .cart-section {
+    margin-right: 6rem;
+  }
+  .product-1 {
+    margin-right: 7rem;
+    width: 60%;
+  }
+  .showcase-content {
+    width: 60%;
+    margin-right: -10rem;
+  }
+  .product-images {
+    margin-top: 4rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .cart-section {
+    margin-right: 10rem;
+  }
+  .logo-box {
+    margin-right: 5rem;
+    font-size: 1rem;
+  }
+  .product-1 {
+    text-align: center;
+    width: 80%;
+  }
+  .showcase-content {
+    width: 80%;
+    margin-right: -10rem;
+    margin-top: 4rem;
+  }
+  .product-photo {
+    width: 2rem;
+  }
+  .showcase-image {
+    width: 20rem;
+    margin-bottom: 2rem;
+  }
+  #collections {
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    flex-direction: column;
+  }
+  .cart-section {
+    margin-right: 10rem;
+  }
+  .logo-box {
+    margin-right: 5rem;
+    font-size: 1rem;
+  }
+  .product-1 {
+    text-align: center;
+    width: 80%;
+  }
+  .showcase-content {
+    width: 80%;
+    margin-right: -10rem;
+    margin-top: 4rem;
+  }
+  .product-photo {
+    width: 2rem;
+  }
+  .showcase-image {
+    width: 20rem;
+    margin-bottom: 2rem;
+  }
+  #collections {
+    margin-top: 8rem;
+  }
+  .collection-items {
+    flex-direction: column;
+  }
 }
