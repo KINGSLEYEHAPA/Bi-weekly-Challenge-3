@@ -364,3 +364,14 @@ for (let c = 0; c < selectedCollectionProduct.length; c++) {
     });
   });
 }
+
+const toggleMenu = document.querySelector(".toggle-bar");
+const navMenu = document.querySelector(".nav-items");
+
+toggleMenu.addEventListener("click", function () {
+  if (navMenu.classList.contains("show-menu"))
+    navMenu.classList.remove("show-menu");
+  else {
+    navMenu.classList.add("show-menu");
+  }
+});

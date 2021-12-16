@@ -418,13 +418,16 @@ span {
   .nav-items {
     position: absolute;
     flex-direction: column;
-    top: 5rem;
-    left: 0;
-    width: 100vw;
+    top: 6rem;
+    width: 100%;
     background-color: var(--primary-color);
     height: 20rem;
-    text-align: center;
+    text-align: right;
     display: none;
+    transition: all 0.5s;
+  }
+  .show-menu {
+    display: block;
   }
   .nav-items li a {
     font-size: 2rem;
@@ -432,7 +435,7 @@ span {
     color: var(--color-white);
   }
   .nav-items li {
-    margin: 0.5rem 0;
+    margin: 0.5rem 2rem;
   }
   .nav-items li:first-child {
     margin-top: 2rem;
@@ -440,7 +443,7 @@ span {
 
   .logo-box {
     position: relative;
-    right: 7rem;
+    right: -3rem;
   }
 
   .cart-section {
@@ -455,6 +458,10 @@ span {
     left: 15rem;
     font-size: 1.5rem;
   }
+
+  #collection {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1011px) {
@@ -463,6 +470,7 @@ span {
   }
   .product-1 {
     margin-right: 7rem;
+    margin-left: 4rem;
     width: 60%;
   }
   .showcase-content {
@@ -472,6 +480,13 @@ span {
   .product-images {
     margin-top: 4rem;
     width: 100%;
+  }
+  .collection-items {
+    width: 90%;
+    margin: 2rem 3rem 3rem 2rem;
+  }
+  .item-no {
+    width: 10rem;
   }
 }
 
@@ -489,6 +504,7 @@ span {
   .product-1 {
     text-align: center;
     width: 80%;
+    margin-left: 4rem;
   }
   .showcase-content {
     width: 80%;
@@ -503,7 +519,15 @@ span {
     margin-bottom: 2rem;
   }
   #collections {
-    margin-top: 8rem;
+    margin: 8rem 2rem 2rem 2rem;
+    width: 100%;
+  }
+  .collection-items {
+    width: 100%;
+    margin: 1rem 4rem;
+  }
+  .item-no {
+    width: 8rem;
   }
 }
 
@@ -521,6 +545,7 @@ span {
   .product-1 {
     text-align: center;
     width: 80%;
+    margin-left: 7rem;
   }
   .showcase-content {
     width: 80%;
